@@ -3,8 +3,8 @@
 
 void SpoutHapPlayerApp::setup()
 {
-	g_Width = 1024;
-	g_Height = 768;
+	g_Width = 640;
+	g_Height = 480;
 
 	setWindowSize(g_Width, g_Height);
 	setWindowPos(ivec2(50, 50));
@@ -118,27 +118,23 @@ void SpoutHapPlayerApp::renderSceneToFbo()
 	gl::ScopedFramebuffer fbScp(mRenderFbo);
 	gl::clear(Color::black(), true);
 	// setup the viewport to match the dimensions of the FBO
-	gl::ScopedViewport scpVp(ivec2(0), mRenderFbo->getSize());
+	gl::ScopedViewport scpVp(ivec2(-120, -110), ivec2(1024, 576));// mRenderFbo->getSize());
+	//gl::ScopedViewport scpVp(ivec2(0, 400), ivec2(1000, 700));// mRenderFbo->getSize());
 	gl::color(Color::white());
-	//gl::viewport(0, -200,1020,768);// getWindowSize());
 
 	if (mMovie) {
-		//if (mMovie->isPlaying()) mMovie->draw();
-		if (mMovie->isPlaying()) gl::draw(mMovie->getTexture());
+		if (mMovie->isPlaying()) mMovie->draw();
+		//if (mMovie->isPlaying()) gl::draw(mMovie->getTexture());
 	}
 }
 void SpoutHapPlayerApp::draw()
 {
+	renderSceneToFbo();
 	gl::clear(Color::black());
 
 	gl::enableAlphaBlending();
-	//gl::viewport(toPixels(getWindowSize()));
-
-	/*if (mMovie) {
-		//if (mMovie->isPlaying()) mMovie->draw();
-		if (mMovie->isPlaying()) gl::draw(mMovie->getTexture());
-	}*/
-	 gl::draw(mRenderFbo->getColorTexture());
+	
+	gl::draw(mRenderFbo->getColorTexture());
 	if (bInitialized)
 	{
 		// Grab the screen (current read buffer) into the local spout texture
