@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720219952D00008149E2 /* AVFoundation.framework */; };
+		006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720319952D00008149E2 /* CoreMedia.framework */; };
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
+		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		D2C6D32071EC451BB874CEEC /* Osc.h in Headers */ = {isa = PBXBuildFile; fileRef = 30EAFBB318BF44B988C47D42 /* Osc.h */; };
+		5D6310DBB3B748CAB1AC2C95 /* Osc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87F3EBCCAD704D1B8A850F3B /* Osc.cpp */; };
+		8F5D043277264EC6B5142629 /* WebSocketServer.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F37F6894AB46119265549E /* WebSocketServer.h */; };
+		F144060434414301B6E400A1 /* WebSocketConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 15A6ABC7A966493994F02571 /* WebSocketConnection.h */; };
+		EFA95431CDC84788A7009C09 /* WebSocketClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FB2350BCE01472CBB898D74 /* WebSocketClient.h */; };
+		3FDBD538B5B54D19A339E7C5 /* WebSocketServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BC865B26A4867A512E756 /* WebSocketServer.cpp */; };
+		3A0A4C5AA7494145AB883621 /* WebSocketConnection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3A416EC5AC748979F30011E /* WebSocketConnection.cpp */; };
+		FE942D62E46A4231A8FBA564 /* WebSocketClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 848DCB2EBF594610BCEE5E4D /* WebSocketClient.cpp */; };
+		054DF01420C641F0B65306D6 /* WarpPerspectiveBilinear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A34C80A1E46E45BEA3303C97 /* WarpPerspectiveBilinear.cpp */; };
+		5A6AD4EA05B84FDF8FA4D670 /* WarpPerspective.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1946289D11F84709B960D5A8 /* WarpPerspective.cpp */; };
+		4B23E5ACCE2E4FB2925ADCA6 /* WarpBilinear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46A19711000D47E68494A4AD /* WarpBilinear.cpp */; };
+		B07CE9C5A7E94BF5B78B122F /* Warp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5931DC410214F669501742F /* Warp.cpp */; };
+		7B0C72D417E24DAC99A0E383 /* Warp.h in Headers */ = {isa = PBXBuildFile; fileRef = 874F7D2CE13C48AAA60B79BF /* Warp.h */; };
+		BA66879CD92641168E424BEC /* VDUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 679E75B4E2094B0BAA148855 /* VDUtils.cpp */; };
+		EBCD0FEE3FC948179306F9F1 /* VDTextures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B04900A9B7B4F29A1003D23 /* VDTextures.cpp */; };
+		CB512841BF1D41DB9B2FE714 /* VDShaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2EAFAEB84C7044EBA9EE55E5 /* VDShaders.cpp */; };
+		3C7A93C5DCD943098AF28714 /* VDSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2FDB27CFE164773889BC5A8 /* VDSettings.cpp */; };
+		F862AFAA92B64255A70D7489 /* VDSession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B1CC542B5EB4A75948BB967 /* VDSession.cpp */; };
+		E1E920F5DE884BD4A18B8281 /* VDRouter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD457E8007894901B4DC4607 /* VDRouter.cpp */; };
+		F5E2CFFDC69D42E6874B8A18 /* VDLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1C7C621BF46C48C5B21FF /* VDLog.cpp */; };
+		46403C24167F42AD86479182 /* VDInputTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60CBCFAB81C843B1B21FF984 /* VDInputTexture.cpp */; };
+		F0EB389147BE4564AA96D32E /* VDHapMovie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F74F3FA999A34414B855BA2A /* VDHapMovie.cpp */; };
+		A5FE1FE37A344FE4B19A3E33 /* VDFbo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9C9889E7E6748D59FD4868D /* VDFbo.cpp */; };
+		72029C449AFE479E8E9FE08D /* VDAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 539C8230DE2441A9862A6D0E /* VDAudio.cpp */; };
+		74B5951F2F3849CABF7FE70D /* VDAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8A42EF29398437A960266BC /* VDAnimation.cpp */; };
+		5529CCBAE9EE4473B74E23F5 /* LiveParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 185CDE55B9E741B2A206FD67 /* LiveParam.cpp */; };
+		8B44155127A6479ABB6F64B6 /* Watchdog.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A1563E50569478297E16E3A /* Watchdog.h */; };
+		17EE6DA81F1F4E3ABE9AFB8E /* VDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D67A4E0E86A54BFCBCFA5B81 /* VDUtils.h */; };
+		4B6B4B8B8619440B93448A51 /* VDTextures.h in Headers */ = {isa = PBXBuildFile; fileRef = 248F126CDC1F4CA29DCFE51F /* VDTextures.h */; };
+		B2F9BE44E6D94846B3DC7291 /* VDShaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 60D1464B26CD47C9BDA487A1 /* VDShaders.h */; };
+		C60B6B37433E410FA5A57F24 /* VDSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 209CF2B2CDAE4DD99B3E4AD2 /* VDSettings.h */; };
+		D2C45FFFAE2B4389A23B68D0 /* VDSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E7CDD80A6A41B2B9961537 /* VDSession.h */; };
+		8AC9E1600413410BA8E59CBF /* VDRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CBE1888889C45AF80A0C118 /* VDRouter.h */; };
+		0FC9C16E9561417BA1B9B3F0 /* VDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = C847E9E4DD274B30B3D5AB77 /* VDLog.h */; };
+		BF91EAD74EBC4332944D8F8B /* VDInputTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 746A07D750D4414CA4D30C89 /* VDInputTexture.h */; };
+		AC2EC3DEC863422EBFDAEEB8 /* VDHapMovie.h in Headers */ = {isa = PBXBuildFile; fileRef = BDE2CA2DCAE346F79632F262 /* VDHapMovie.h */; };
+		A985DECB0F144B8C97B4015E /* VDFbo.h in Headers */ = {isa = PBXBuildFile; fileRef = C8509AB9A5EC4F3198F7C2BE /* VDFbo.h */; };
+		E8868405E03D469B9511204B /* VDAudio.h in Headers */ = {isa = PBXBuildFile; fileRef = 0252269E5DD94571BA9B83E4 /* VDAudio.h */; };
+		4E6879960C374F4F8E9C6088 /* VDAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 08C8893DFFE04DE2BB9B1ED1 /* VDAnimation.h */; };
+		6F53312E520742E19F44C410 /* LiveParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD6B5169FB647BF9F81E2FD /* LiveParam.h */; };
+		F20147471610406CBE245F02 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC6C1F5247314D3BA059B451 /* CoreMIDI.framework */; };
+		D138737228284CC4B502EC52 /* MidiOut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 377DBD1B2BDC44489B07F462 /* MidiOut.cpp */; };
+		3B78D91BF8AF447B9167B324 /* CinderMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 547EE8C1357E476A97DE4DC5 /* CinderMidi.cpp */; };
+		5D697BFD8C2243C1936A6230 /* MidiHub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 353B58C058D3442E82FF4DF3 /* MidiHub.cpp */; };
+		F4A194F324A043D3A4B50E98 /* RtMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 780E7D73069B43489A3A73C4 /* RtMidi.cpp */; };
+		3D36DFFF4CF0427DA253076A /* RtMidi.h in Headers */ = {isa = PBXBuildFile; fileRef = 7733B775181A422C9B3EE4D1 /* RtMidi.h */; };
+		9B4C0EBD9EBC420DA71F0BF7 /* MidiOut.h in Headers */ = {isa = PBXBuildFile; fileRef = 06C5F1E3119E405F98A1B020 /* MidiOut.h */; };
+		8FD87E25FD784641A61C56C4 /* MidiHub.h in Headers */ = {isa = PBXBuildFile; fileRef = 33F9E56638664482865F864E /* MidiHub.h */; };
+		1A5519765ADF4FEDA910DEDA /* MidiExceptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B03CB84A11483881DA8A11 /* MidiExceptions.h */; };
+		95B9C434B073417D835C9C92 /* CinderMidi.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DCFFBA88EEA44A282C2723F /* CinderMidi.h */; };
+		AF281405A4DB4D799C36D36B /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01BB9CEB4A344881B9931BEC /* imgui_demo.cpp */; };
+		177DFB94323B4FCC9E435255 /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9EB2588DABA4AA898026A76 /* imgui_draw.cpp */; };
+		9DD90B1B39454959B79E5202 /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77DF56583354479A919983F7 /* imgui.cpp */; };
+		7E511815920A48AC9263BF8A /* CinderImGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D72DBED3F404A648774F7F3 /* CinderImGui.cpp */; };
+		6E5E706589D54F5DA246242B /* imgui_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD9E144A1C646D2A3F6C52F /* imgui_internal.h */; };
+		F906835C1EDF454390382703 /* imgui.h in Headers */ = {isa = PBXBuildFile; fileRef = C2A88652EF2D465FA8A6A178 /* imgui.h */; };
+		20ACD48506BF44A89D6E309B /* imconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 70311E02192840F7813AA1F2 /* imconfig.h */; };
+		86BCF0EAB8344499A71F26F3 /* imgui_user.inl in Headers */ = {isa = PBXBuildFile; fileRef = 15D70191CA194A2D93F8A661 /* imgui_user.inl */; };
+		448371A9327A4392B3FB637C /* imgui_user.h in Headers */ = {isa = PBXBuildFile; fileRef = 9408BA05E80240609C69C265 /* imgui_user.h */; };
+		9A303A0C57694FBDB172C3B5 /* CinderImGui.h in Headers */ = {isa = PBXBuildFile; fileRef = EC5621608B0E40D2A435A6E2 /* CinderImGui.h */; };
+		EE2AD7E2DA6B40AF97DECC5A /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7432D5EBB94418EA332BCDC /* QuickTime.framework */; };
+		7AA22E33111F486BA29B9946 /* ScaledCoCgYToRGBA.frag in Resources */ = {isa = PBXBuildFile; fileRef = 74979FE1E7C0472CAF7C4996 /* ScaledCoCgYToRGBA.frag */; };
+		208D7752416847EDA05BB59D /* ScaledCoCgYToRGBA.vert in Resources */ = {isa = PBXBuildFile; fileRef = 30E1845E66534D55A0950F54 /* ScaledCoCgYToRGBA.vert */; };
+		5B86CC5505B64F1BA5195EC7 /* MovieHap.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A19F0C4BCF1418E9FA7DC4C /* MovieHap.h */; };
+		470D230BE9D24C08B9704F90 /* HapSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = DE54D1D0768548249A76DF75 /* HapSupport.h */; };
+		8160F6087E4244E997DBE2B9 /* HapSupport.c in Sources */ = {isa = PBXBuildFile; fileRef = FCB1DEE7C9F44F5DBD63180F /* HapSupport.c */; };
+		B7D6188ED44D491697258553 /* MovieHap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB0C76BD4CEA4A399995BD44 /* MovieHap.cpp */; };
+		6675AFF66E70456FBB9E862E /* SpoutHapPlayerApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BF27B9575C14A30B0904E1C /* SpoutHapPlayerApp.cpp */; };
+		BDF28B1F134847D79867193E /* SpoutHapPlayer_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = C2264C3F08E843408E4B7DFC /* SpoutHapPlayer_Prefix.pch */; };
+		FE8812F8F0AF4BA2B255F806 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = EA4C17DFD4E9439DA4FC9E34 /* CinderApp.icns */; };
+		FB050057F77E426D821F02F9 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 96E5CC2142D4415C96FE2339 /* Resources.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		006D720219952D00008149E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		006D720319952D00008149E2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		00B995581B128DF400A5C623 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		8D1107320486CEB800E47090 /* SpoutHapPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpoutHapPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E5CC2142D4415C96FE2339 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../include/Resources.h; sourceTree = "<group>"; name = Resources.h; };
+		EA4C17DFD4E9439DA4FC9E34 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; name = CinderApp.icns; };
+		4EB4E5783A4047D2B073E5CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; name = Info.plist; };
+		C2264C3F08E843408E4B7DFC /* SpoutHapPlayer_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = SpoutHapPlayer_Prefix.pch; sourceTree = "<group>"; name = SpoutHapPlayer_Prefix.pch; };
+		8BF27B9575C14A30B0904E1C /* SpoutHapPlayerApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../src/SpoutHapPlayerApp.cpp; sourceTree = "<group>"; name = SpoutHapPlayerApp.cpp; };
+		BB0C76BD4CEA4A399995BD44 /* MovieHap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Hap2/src/MovieHap.cpp"; sourceTree = "<group>"; name = MovieHap.cpp; };
+		FCB1DEE7C9F44F5DBD63180F /* HapSupport.c */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = "../../../Cinder/blocks/Cinder-Hap2/src/HapSupport.c"; sourceTree = "<group>"; name = HapSupport.c; };
+		DE54D1D0768548249A76DF75 /* HapSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Hap2/src/HapSupport.h"; sourceTree = "<group>"; name = HapSupport.h; };
+		3A19F0C4BCF1418E9FA7DC4C /* MovieHap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Hap2/src/MovieHap.h"; sourceTree = "<group>"; name = MovieHap.h; };
+		30E1845E66534D55A0950F54 /* ScaledCoCgYToRGBA.vert */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = "../../../Cinder/blocks/Cinder-Hap2/resources/ScaledCoCgYToRGBA.vert"; sourceTree = "<group>"; name = ScaledCoCgYToRGBA.vert; };
+		74979FE1E7C0472CAF7C4996 /* ScaledCoCgYToRGBA.frag */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = "../../../Cinder/blocks/Cinder-Hap2/resources/ScaledCoCgYToRGBA.frag"; sourceTree = "<group>"; name = ScaledCoCgYToRGBA.frag; };
+		C7432D5EBB94418EA332BCDC /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; name = QuickTime.framework; };
+		EC5621608B0E40D2A435A6E2 /* CinderImGui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-ImGui/include/CinderImGui.h"; sourceTree = "<group>"; name = CinderImGui.h; };
+		9408BA05E80240609C69C265 /* imgui_user.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-ImGui/include/imgui_user.h"; sourceTree = "<group>"; name = imgui_user.h; };
+		15D70191CA194A2D93F8A661 /* imgui_user.inl */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = "../../../Cinder/blocks/Cinder-ImGui/include/imgui_user.inl"; sourceTree = "<group>"; name = imgui_user.inl; };
+		70311E02192840F7813AA1F2 /* imconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-ImGui/lib/imgui/imconfig.h"; sourceTree = "<group>"; name = imconfig.h; };
+		C2A88652EF2D465FA8A6A178 /* imgui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-ImGui/lib/imgui/imgui.h"; sourceTree = "<group>"; name = imgui.h; };
+		9AD9E144A1C646D2A3F6C52F /* imgui_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-ImGui/lib/imgui/imgui_internal.h"; sourceTree = "<group>"; name = imgui_internal.h; };
+		3D72DBED3F404A648774F7F3 /* CinderImGui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-ImGui/src/CinderImGui.cpp"; sourceTree = "<group>"; name = CinderImGui.cpp; };
+		77DF56583354479A919983F7 /* imgui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-ImGui/lib/imgui/imgui.cpp"; sourceTree = "<group>"; name = imgui.cpp; };
+		E9EB2588DABA4AA898026A76 /* imgui_draw.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-ImGui/lib/imgui/imgui_draw.cpp"; sourceTree = "<group>"; name = imgui_draw.cpp; };
+		01BB9CEB4A344881B9931BEC /* imgui_demo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-ImGui/lib/imgui/imgui_demo.cpp"; sourceTree = "<group>"; name = imgui_demo.cpp; };
+		1DCFFBA88EEA44A282C2723F /* CinderMidi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-MIDI2/include/CinderMidi.h"; sourceTree = "<group>"; name = CinderMidi.h; };
+		34B03CB84A11483881DA8A11 /* MidiExceptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-MIDI2/include/MidiExceptions.h"; sourceTree = "<group>"; name = MidiExceptions.h; };
+		33F9E56638664482865F864E /* MidiHub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-MIDI2/include/MidiHub.h"; sourceTree = "<group>"; name = MidiHub.h; };
+		06C5F1E3119E405F98A1B020 /* MidiOut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-MIDI2/include/MidiOut.h"; sourceTree = "<group>"; name = MidiOut.h; };
+		7733B775181A422C9B3EE4D1 /* RtMidi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-MIDI2/lib/RtMidi.h"; sourceTree = "<group>"; name = RtMidi.h; };
+		780E7D73069B43489A3A73C4 /* RtMidi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-MIDI2/lib/RtMidi.cpp"; sourceTree = "<group>"; name = RtMidi.cpp; };
+		353B58C058D3442E82FF4DF3 /* MidiHub.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-MIDI2/src/MidiHub.cpp"; sourceTree = "<group>"; name = MidiHub.cpp; };
+		547EE8C1357E476A97DE4DC5 /* CinderMidi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-MIDI2/src/CinderMidi.cpp"; sourceTree = "<group>"; name = CinderMidi.cpp; };
+		377DBD1B2BDC44489B07F462 /* MidiOut.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-MIDI2/src/MidiOut.cpp"; sourceTree = "<group>"; name = MidiOut.cpp; };
+		FC6C1F5247314D3BA059B451 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; name = CoreMIDI.framework; };
+		4AD6B5169FB647BF9F81E2FD /* LiveParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Videodromm/include/LiveParam.h"; sourceTree = "<group>"; name = LiveParam.h; };
+		08C8893DFFE04DE2BB9B1ED1 /* VDAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Videodromm/include/VDAnimation.h"; sourceTree = "<group>"; name = VDAnimation.h; };
+		0252269E5DD94571BA9B83E4 /* VDAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Videodromm/include/VDAudio.h"; sourceTree = "<group>"; name = VDAudio.h; };
+		C8509AB9A5EC4F3198F7C2BE /* VDFbo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Videodromm/include/VDFbo.h"; sourceTree = "<group>"; name = VDFbo.h; };
+		BDE2CA2DCAE346F79632F262 /* VDHapMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Videodromm/include/VDHapMovie.h"; sourceTree = "<group>"; name = VDHapMovie.h; };
+		746A07D750D4414CA4D30C89 /* VDInputTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Videodromm/include/VDInputTexture.h"; sourceTree = "<group>"; name = VDInputTexture.h; };
+		C847E9E4DD274B30B3D5AB77 /* VDLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Videodromm/include/VDLog.h"; sourceTree = "<group>"; name = VDLog.h; };
+		7CBE1888889C45AF80A0C118 /* VDRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Videodromm/include/VDRouter.h"; sourceTree = "<group>"; name = VDRouter.h; };
+		78E7CDD80A6A41B2B9961537 /* VDSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Videodromm/include/VDSession.h"; sourceTree = "<group>"; name = VDSession.h; };
+		209CF2B2CDAE4DD99B3E4AD2 /* VDSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Videodromm/include/VDSettings.h"; sourceTree = "<group>"; name = VDSettings.h; };
+		60D1464B26CD47C9BDA487A1 /* VDShaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Videodromm/include/VDShaders.h"; sourceTree = "<group>"; name = VDShaders.h; };
+		248F126CDC1F4CA29DCFE51F /* VDTextures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Videodromm/include/VDTextures.h"; sourceTree = "<group>"; name = VDTextures.h; };
+		D67A4E0E86A54BFCBCFA5B81 /* VDUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Videodromm/include/VDUtils.h"; sourceTree = "<group>"; name = VDUtils.h; };
+		8A1563E50569478297E16E3A /* Watchdog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Videodromm/include/Watchdog.h"; sourceTree = "<group>"; name = Watchdog.h; };
+		185CDE55B9E741B2A206FD67 /* LiveParam.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Videodromm/src/LiveParam.cpp"; sourceTree = "<group>"; name = LiveParam.cpp; };
+		A8A42EF29398437A960266BC /* VDAnimation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Videodromm/src/VDAnimation.cpp"; sourceTree = "<group>"; name = VDAnimation.cpp; };
+		539C8230DE2441A9862A6D0E /* VDAudio.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Videodromm/src/VDAudio.cpp"; sourceTree = "<group>"; name = VDAudio.cpp; };
+		F9C9889E7E6748D59FD4868D /* VDFbo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Videodromm/src/VDFbo.cpp"; sourceTree = "<group>"; name = VDFbo.cpp; };
+		F74F3FA999A34414B855BA2A /* VDHapMovie.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Videodromm/src/VDHapMovie.cpp"; sourceTree = "<group>"; name = VDHapMovie.cpp; };
+		60CBCFAB81C843B1B21FF984 /* VDInputTexture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Videodromm/src/VDInputTexture.cpp"; sourceTree = "<group>"; name = VDInputTexture.cpp; };
+		2CC1C7C621BF46C48C5B21FF /* VDLog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Videodromm/src/VDLog.cpp"; sourceTree = "<group>"; name = VDLog.cpp; };
+		CD457E8007894901B4DC4607 /* VDRouter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Videodromm/src/VDRouter.cpp"; sourceTree = "<group>"; name = VDRouter.cpp; };
+		9B1CC542B5EB4A75948BB967 /* VDSession.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Videodromm/src/VDSession.cpp"; sourceTree = "<group>"; name = VDSession.cpp; };
+		E2FDB27CFE164773889BC5A8 /* VDSettings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Videodromm/src/VDSettings.cpp"; sourceTree = "<group>"; name = VDSettings.cpp; };
+		2EAFAEB84C7044EBA9EE55E5 /* VDShaders.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Videodromm/src/VDShaders.cpp"; sourceTree = "<group>"; name = VDShaders.cpp; };
+		4B04900A9B7B4F29A1003D23 /* VDTextures.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Videodromm/src/VDTextures.cpp"; sourceTree = "<group>"; name = VDTextures.cpp; };
+		679E75B4E2094B0BAA148855 /* VDUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Videodromm/src/VDUtils.cpp"; sourceTree = "<group>"; name = VDUtils.cpp; };
+		874F7D2CE13C48AAA60B79BF /* Warp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-Warping/include/Warp.h"; sourceTree = "<group>"; name = Warp.h; };
+		D5931DC410214F669501742F /* Warp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Warping/src/Warp.cpp"; sourceTree = "<group>"; name = Warp.cpp; };
+		46A19711000D47E68494A4AD /* WarpBilinear.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Warping/src/WarpBilinear.cpp"; sourceTree = "<group>"; name = WarpBilinear.cpp; };
+		1946289D11F84709B960D5A8 /* WarpPerspective.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Warping/src/WarpPerspective.cpp"; sourceTree = "<group>"; name = WarpPerspective.cpp; };
+		A34C80A1E46E45BEA3303C97 /* WarpPerspectiveBilinear.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-Warping/src/WarpPerspectiveBilinear.cpp"; sourceTree = "<group>"; name = WarpPerspectiveBilinear.cpp; };
+		848DCB2EBF594610BCEE5E4D /* WebSocketClient.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-WebSocketPP/src/WebSocketClient.cpp"; sourceTree = "<group>"; name = WebSocketClient.cpp; };
+		F3A416EC5AC748979F30011E /* WebSocketConnection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-WebSocketPP/src/WebSocketConnection.cpp"; sourceTree = "<group>"; name = WebSocketConnection.cpp; };
+		9A7BC865B26A4867A512E756 /* WebSocketServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = "../../../Cinder/blocks/Cinder-WebSocketPP/src/WebSocketServer.cpp"; sourceTree = "<group>"; name = WebSocketServer.cpp; };
+		4FB2350BCE01472CBB898D74 /* WebSocketClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-WebSocketPP/src/WebSocketClient.h"; sourceTree = "<group>"; name = WebSocketClient.h; };
+		15A6ABC7A966493994F02571 /* WebSocketConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-WebSocketPP/src/WebSocketConnection.h"; sourceTree = "<group>"; name = WebSocketConnection.h; };
+		D0F37F6894AB46119265549E /* WebSocketServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "../../../Cinder/blocks/Cinder-WebSocketPP/src/WebSocketServer.h"; sourceTree = "<group>"; name = WebSocketServer.h; };
+		87F3EBCCAD704D1B8A850F3B /* Osc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; path = ../../../Cinder/blocks/OSC/src/Osc.cpp; sourceTree = "<group>"; name = Osc.cpp; };
+		30EAFBB318BF44B988C47D42 /* Osc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ../../../Cinder/blocks/OSC/src/Osc.h; sourceTree = "<group>"; name = Osc.h; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */,
+				006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+				00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */,
+				00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */,
+				EE2AD7E2DA6B40AF97DECC5A /* QuickTime.framework in Frameworks */,
+				F20147471610406CBE245F02 /* CoreMIDI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8BF27B9575C14A30B0904E1C /* SpoutHapPlayerApp.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006D720219952D00008149E2 /* AVFoundation.framework */,
+				006D720319952D00008149E2 /* CoreMedia.framework */,
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				00B995581B128DF400A5C623 /* IOKit.framework */,
+				00B995591B128DF400A5C623 /* IOSurface.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* SpoutHapPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* SpoutHapPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = SpoutHapPlayer;
+			sourceTree = "<group>";
+		};
+		C4779274421A40F49656BE2A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BB0C76BD4CEA4A399995BD44 /* MovieHap.cpp */,
+				FCB1DEE7C9F44F5DBD63180F /* HapSupport.c */,
+				DE54D1D0768548249A76DF75 /* HapSupport.h */,
+				3A19F0C4BCF1418E9FA7DC4C /* MovieHap.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		214B7103AF7E4F19AB787B47 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				30E1845E66534D55A0950F54 /* ScaledCoCgYToRGBA.vert */,
+				74979FE1E7C0472CAF7C4996 /* ScaledCoCgYToRGBA.frag */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		B04370D23A12499B8F481864 /* Cinder-Hap2 */ = {
+			isa = PBXGroup;
+			children = (
+				C4779274421A40F49656BE2A /* src */,
+				214B7103AF7E4F19AB787B47 /* resources */,
+			);
+			name = "Cinder-Hap2";
+			sourceTree = "<group>";
+		};
+		72029BE6D0F44DB5850ED568 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EC5621608B0E40D2A435A6E2 /* CinderImGui.h */,
+				9408BA05E80240609C69C265 /* imgui_user.h */,
+				15D70191CA194A2D93F8A661 /* imgui_user.inl */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		B73E5D93421649B9A747403D /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				70311E02192840F7813AA1F2 /* imconfig.h */,
+				C2A88652EF2D465FA8A6A178 /* imgui.h */,
+				9AD9E144A1C646D2A3F6C52F /* imgui_internal.h */,
+				77DF56583354479A919983F7 /* imgui.cpp */,
+				E9EB2588DABA4AA898026A76 /* imgui_draw.cpp */,
+				01BB9CEB4A344881B9931BEC /* imgui_demo.cpp */,
+			);
+			name = imgui;
+			sourceTree = "<group>";
+		};
+		C780353717184ED2AD6A08ED /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B73E5D93421649B9A747403D /* imgui */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		04239D64BFB941CB9FCD6088 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3D72DBED3F404A648774F7F3 /* CinderImGui.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		D57EFCE245E9478FAC6D3D7D /* ImGui */ = {
+			isa = PBXGroup;
+			children = (
+				72029BE6D0F44DB5850ED568 /* include */,
+				C780353717184ED2AD6A08ED /* lib */,
+				04239D64BFB941CB9FCD6088 /* src */,
+			);
+			name = ImGui;
+			sourceTree = "<group>";
+		};
+		D711C214E49C41BEB820DFED /* include */ = {
+			isa = PBXGroup;
+			children = (
+				1DCFFBA88EEA44A282C2723F /* CinderMidi.h */,
+				34B03CB84A11483881DA8A11 /* MidiExceptions.h */,
+				33F9E56638664482865F864E /* MidiHub.h */,
+				06C5F1E3119E405F98A1B020 /* MidiOut.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		B717121EF9D746BF97DB4ABA /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				7733B775181A422C9B3EE4D1 /* RtMidi.h */,
+				780E7D73069B43489A3A73C4 /* RtMidi.cpp */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		E3AE420F0E6F4C3198A01751 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				353B58C058D3442E82FF4DF3 /* MidiHub.cpp */,
+				547EE8C1357E476A97DE4DC5 /* CinderMidi.cpp */,
+				377DBD1B2BDC44489B07F462 /* MidiOut.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		BE3C8FE922934FB09A0B0B7F /* Midi2 */ = {
+			isa = PBXGroup;
+			children = (
+				D711C214E49C41BEB820DFED /* include */,
+				B717121EF9D746BF97DB4ABA /* lib */,
+				E3AE420F0E6F4C3198A01751 /* src */,
+			);
+			name = Midi2;
+			sourceTree = "<group>";
+		};
+		2CAE85A57B4146F3A3019368 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4AD6B5169FB647BF9F81E2FD /* LiveParam.h */,
+				08C8893DFFE04DE2BB9B1ED1 /* VDAnimation.h */,
+				0252269E5DD94571BA9B83E4 /* VDAudio.h */,
+				C8509AB9A5EC4F3198F7C2BE /* VDFbo.h */,
+				BDE2CA2DCAE346F79632F262 /* VDHapMovie.h */,
+				746A07D750D4414CA4D30C89 /* VDInputTexture.h */,
+				C847E9E4DD274B30B3D5AB77 /* VDLog.h */,
+				7CBE1888889C45AF80A0C118 /* VDRouter.h */,
+				78E7CDD80A6A41B2B9961537 /* VDSession.h */,
+				209CF2B2CDAE4DD99B3E4AD2 /* VDSettings.h */,
+				60D1464B26CD47C9BDA487A1 /* VDShaders.h */,
+				248F126CDC1F4CA29DCFE51F /* VDTextures.h */,
+				D67A4E0E86A54BFCBCFA5B81 /* VDUtils.h */,
+				8A1563E50569478297E16E3A /* Watchdog.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		39FE747645C641C89423B04A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				185CDE55B9E741B2A206FD67 /* LiveParam.cpp */,
+				A8A42EF29398437A960266BC /* VDAnimation.cpp */,
+				539C8230DE2441A9862A6D0E /* VDAudio.cpp */,
+				F9C9889E7E6748D59FD4868D /* VDFbo.cpp */,
+				F74F3FA999A34414B855BA2A /* VDHapMovie.cpp */,
+				60CBCFAB81C843B1B21FF984 /* VDInputTexture.cpp */,
+				2CC1C7C621BF46C48C5B21FF /* VDLog.cpp */,
+				CD457E8007894901B4DC4607 /* VDRouter.cpp */,
+				9B1CC542B5EB4A75948BB967 /* VDSession.cpp */,
+				E2FDB27CFE164773889BC5A8 /* VDSettings.cpp */,
+				2EAFAEB84C7044EBA9EE55E5 /* VDShaders.cpp */,
+				4B04900A9B7B4F29A1003D23 /* VDTextures.cpp */,
+				679E75B4E2094B0BAA148855 /* VDUtils.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		6CB17BB953B64BB192018863 /* Videodromm */ = {
+			isa = PBXGroup;
+			children = (
+				2CAE85A57B4146F3A3019368 /* include */,
+				39FE747645C641C89423B04A /* src */,
+			);
+			name = Videodromm;
+			sourceTree = "<group>";
+		};
+		EE09848C5F0F40E0BC176D05 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				874F7D2CE13C48AAA60B79BF /* Warp.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		FB4707730ABA496C93514B8C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D5931DC410214F669501742F /* Warp.cpp */,
+				46A19711000D47E68494A4AD /* WarpBilinear.cpp */,
+				1946289D11F84709B960D5A8 /* WarpPerspective.cpp */,
+				A34C80A1E46E45BEA3303C97 /* WarpPerspectiveBilinear.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		86FAD3A0AA8B4A4BACD0DEF2 /* Cinder-Warping */ = {
+			isa = PBXGroup;
+			children = (
+				EE09848C5F0F40E0BC176D05 /* include */,
+				FB4707730ABA496C93514B8C /* src */,
+			);
+			name = "Cinder-Warping";
+			sourceTree = "<group>";
+		};
+		0FA98287BCAB433082036782 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				848DCB2EBF594610BCEE5E4D /* WebSocketClient.cpp */,
+				F3A416EC5AC748979F30011E /* WebSocketConnection.cpp */,
+				9A7BC865B26A4867A512E756 /* WebSocketServer.cpp */,
+				4FB2350BCE01472CBB898D74 /* WebSocketClient.h */,
+				15A6ABC7A966493994F02571 /* WebSocketConnection.h */,
+				D0F37F6894AB46119265549E /* WebSocketServer.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		F9508C01DC9F492E9E7A2335 /* Cinder-WebSocketPP */ = {
+			isa = PBXGroup;
+			children = (
+				0FA98287BCAB433082036782 /* src */,
+			);
+			name = "Cinder-WebSocketPP";
+			sourceTree = "<group>";
+		};
+		04FE3265A7F044B2BD8590BA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				87F3EBCCAD704D1B8A850F3B /* Osc.cpp */,
+				30EAFBB318BF44B988C47D42 /* Osc.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		730DC7E3F81742E8975FD6ED /* OSC */ = {
+			isa = PBXGroup;
+			children = (
+				04FE3265A7F044B2BD8590BA /* src */,
+			);
+			name = OSC;
+			sourceTree = "<group>";
+		};
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				B04370D23A12499B8F481864 /* Cinder-Hap2 */,
+				D57EFCE245E9478FAC6D3D7D /* ImGui */,
+				BE3C8FE922934FB09A0B0B7F /* Midi2 */,
+				6CB17BB953B64BB192018863 /* Videodromm */,
+				86FAD3A0AA8B4A4BACD0DEF2 /* Cinder-Warping */,
+				F9508C01DC9F492E9E7A2335 /* Cinder-WebSocketPP */,
+				730DC7E3F81742E8975FD6ED /* OSC */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				96E5CC2142D4415C96FE2339 /* Resources.h */,
+				C2264C3F08E843408E4B7DFC /* SpoutHapPlayer_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA4C17DFD4E9439DA4FC9E34 /* CinderApp.icns */,
+				4EB4E5783A4047D2B073E5CD /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				C7432D5EBB94418EA332BCDC /* QuickTime.framework */,
+				FC6C1F5247314D3BA059B451 /* CoreMIDI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* SpoutHapPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SpoutHapPlayer" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpoutHapPlayer;
+			productInstallPath = "$(HOME)/Applications";
+			productName = SpoutHapPlayer;
+			productReference = 8D1107320486CEB800E47090 /* SpoutHapPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SpoutHapPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* SpoutHapPlayer */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* SpoutHapPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8812F8F0AF4BA2B255F806 /* CinderApp.icns in Resources */,
+				208D7752416847EDA05BB59D /* ScaledCoCgYToRGBA.vert in Resources */,
+				7AA22E33111F486BA29B9946 /* ScaledCoCgYToRGBA.frag in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6675AFF66E70456FBB9E862E /* SpoutHapPlayerApp.cpp in Sources */,
+				B7D6188ED44D491697258553 /* MovieHap.cpp in Sources */,
+				8160F6087E4244E997DBE2B9 /* HapSupport.c in Sources */,
+				7E511815920A48AC9263BF8A /* CinderImGui.cpp in Sources */,
+				9DD90B1B39454959B79E5202 /* imgui.cpp in Sources */,
+				177DFB94323B4FCC9E435255 /* imgui_draw.cpp in Sources */,
+				AF281405A4DB4D799C36D36B /* imgui_demo.cpp in Sources */,
+				F4A194F324A043D3A4B50E98 /* RtMidi.cpp in Sources */,
+				5D697BFD8C2243C1936A6230 /* MidiHub.cpp in Sources */,
+				3B78D91BF8AF447B9167B324 /* CinderMidi.cpp in Sources */,
+				D138737228284CC4B502EC52 /* MidiOut.cpp in Sources */,
+				5529CCBAE9EE4473B74E23F5 /* LiveParam.cpp in Sources */,
+				74B5951F2F3849CABF7FE70D /* VDAnimation.cpp in Sources */,
+				72029C449AFE479E8E9FE08D /* VDAudio.cpp in Sources */,
+				A5FE1FE37A344FE4B19A3E33 /* VDFbo.cpp in Sources */,
+				F0EB389147BE4564AA96D32E /* VDHapMovie.cpp in Sources */,
+				46403C24167F42AD86479182 /* VDInputTexture.cpp in Sources */,
+				F5E2CFFDC69D42E6874B8A18 /* VDLog.cpp in Sources */,
+				E1E920F5DE884BD4A18B8281 /* VDRouter.cpp in Sources */,
+				F862AFAA92B64255A70D7489 /* VDSession.cpp in Sources */,
+				3C7A93C5DCD943098AF28714 /* VDSettings.cpp in Sources */,
+				CB512841BF1D41DB9B2FE714 /* VDShaders.cpp in Sources */,
+				EBCD0FEE3FC948179306F9F1 /* VDTextures.cpp in Sources */,
+				BA66879CD92641168E424BEC /* VDUtils.cpp in Sources */,
+				B07CE9C5A7E94BF5B78B122F /* Warp.cpp in Sources */,
+				4B23E5ACCE2E4FB2925ADCA6 /* WarpBilinear.cpp in Sources */,
+				5A6AD4EA05B84FDF8FA4D670 /* WarpPerspective.cpp in Sources */,
+				054DF01420C641F0B65306D6 /* WarpPerspectiveBilinear.cpp in Sources */,
+				FE942D62E46A4231A8FBA564 /* WebSocketClient.cpp in Sources */,
+				3A0A4C5AA7494145AB883621 /* WebSocketConnection.cpp in Sources */,
+				3FDBD538B5B54D19A339E7C5 /* WebSocketServer.cpp in Sources */,
+				5D6310DBB3B748CAB1AC2C95 /* Osc.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SpoutHapPlayer_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = SpoutHapPlayer;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SpoutHapPlayer_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = SpoutHapPlayer;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = "../../../Cinder";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				ENABLE_TESTABILITY = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\"",
+					"\"../../../Cinder/blocks/Cinder-WebSocketPP/src\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\" ../include",
+					"\"../../../Cinder/blocks/Cinder-Hap2/src\"",
+					"\"../../../Cinder/blocks/Cinder-ImGui/lib/imgui\"",
+					"\"../../../Cinder/blocks/Cinder-ImGui/include\"",
+					"\"../../../Cinder/blocks/Cinder-MIDI2/include\"",
+					"\"../../../Cinder/blocks/Cinder-MIDI2/lib\"",
+					"\"../../../Cinder/blocks/Cinder-MIDI2/src\"",
+					"\"../../../Cinder/blocks/Cinder-Videodromm/include\"",
+					"\"../../../Cinder/blocks/Cinder-Videodromm/src\"",
+					"\"../../../Cinder/blocks/Cinder-Warping/include\"",
+					../../../Cinder/include/asio,
+					../../../Cinder/blocks/OSC/src,
+					../../../Cinder/blocks/QuickTime/include,
+				);
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = "../../../Cinder";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\"",
+					"\"../../../Cinder/blocks/Cinder-WebSocketPP/src\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/include\" ../include",
+					"\"../../../Cinder/blocks/Cinder-Hap2/src\"",
+					"\"../../../Cinder/blocks/Cinder-ImGui/lib/imgui\"",
+					"\"../../../Cinder/blocks/Cinder-ImGui/include\"",
+					"\"../../../Cinder/blocks/Cinder-MIDI2/include\"",
+					"\"../../../Cinder/blocks/Cinder-MIDI2/lib\"",
+					"\"../../../Cinder/blocks/Cinder-MIDI2/src\"",
+					"\"../../../Cinder/blocks/Cinder-Videodromm/include\"",
+					"\"../../../Cinder/blocks/Cinder-Videodromm/src\"",
+					"\"../../../Cinder/blocks/Cinder-Warping/include\"",
+					../../../Cinder/include/asio,
+					../../../Cinder/blocks/OSC/src,
+					../../../Cinder/blocks/QuickTime/include,
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "SpoutHapPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "SpoutHapPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
