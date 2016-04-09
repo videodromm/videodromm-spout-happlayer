@@ -20,7 +20,7 @@ void SpoutHapPlayerApp::setup()
 	// Set up the texture we will use to send out
 	// We grab the screen so it has to be the same size
 	bInitialized = false;
-	fs::path moviePath = getAssetPath("") / "lovewaitingroomHap1024x576.mov";
+	fs::path moviePath = getAssetPath("") / "lovewaitingroomHap640x360.mov";
 	loadMovieFile(moviePath);
 }
 void SpoutHapPlayerApp::keyDown(KeyEvent event)
@@ -118,7 +118,7 @@ void SpoutHapPlayerApp::renderSceneToFbo()
 	gl::ScopedFramebuffer fbScp(mRenderFbo);
 	gl::clear(Color::black(), true);
 	// setup the viewport to match the dimensions of the FBO
-	gl::ScopedViewport scpVp(ivec2(-120, -110), ivec2(1024, 576));// mRenderFbo->getSize());
+	gl::ScopedViewport scpVp(ivec2(0, -220), ivec2(1024, 768));// mRenderFbo->getSize());
 	//gl::ScopedViewport scpVp(ivec2(0, 400), ivec2(1000, 700));// mRenderFbo->getSize());
 	gl::color(Color::white());
 
