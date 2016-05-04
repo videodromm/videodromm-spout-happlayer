@@ -20,7 +20,7 @@ void SpoutHapPlayerApp::setup()
 	// Set up the texture we will use to send out
 	// We grab the screen so it has to be the same size
 	bInitialized = false;
-	fs::path moviePath = getAssetPath("") / "lovewaitingroomHap640x360.mov";
+	fs::path moviePath = getAssetPath("") / "pupilles640x480.hap.mov";
 	loadMovieFile(moviePath);
 }
 void SpoutHapPlayerApp::keyDown(KeyEvent event)

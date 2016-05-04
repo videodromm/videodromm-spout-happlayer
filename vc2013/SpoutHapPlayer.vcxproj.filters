@@ -165,34 +165,13 @@
     <ClInclude Include="..\..\..\Cinder\blocks\Cinder-Videodromm\include\VDAnimation.h">
       <Filter>Blocks\Videodromm\include</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Cinder\blocks\Cinder-Videodromm\include\VDAudio.h">
-      <Filter>Blocks\Videodromm\include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Cinder\blocks\Cinder-Videodromm\include\VDFbo.h">
-      <Filter>Blocks\Videodromm\include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Cinder\blocks\Cinder-Videodromm\include\VDHapMovie.h">
-      <Filter>Blocks\Videodromm\include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Cinder\blocks\Cinder-Videodromm\include\VDInputTexture.h">
-      <Filter>Blocks\Videodromm\include</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Cinder\blocks\Cinder-Videodromm\include\VDLog.h">
-      <Filter>Blocks\Videodromm\include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Cinder\blocks\Cinder-Videodromm\include\VDRouter.h">
       <Filter>Blocks\Videodromm\include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Cinder\blocks\Cinder-Videodromm\include\VDSession.h">
       <Filter>Blocks\Videodromm\include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Cinder\blocks\Cinder-Videodromm\include\VDSettings.h">
-      <Filter>Blocks\Videodromm\include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Cinder\blocks\Cinder-Videodromm\include\VDShaders.h">
-      <Filter>Blocks\Videodromm\include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Cinder\blocks\Cinder-Videodromm\include\VDTextures.h">
       <Filter>Blocks\Videodromm\include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Cinder\blocks\Cinder-Videodromm\include\VDUtils.h">
@@ -207,34 +186,13 @@
     <ClCompile Include="..\..\..\Cinder\blocks\Cinder-Videodromm\src\VDAnimation.cpp">
       <Filter>Blocks\Videodromm\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Cinder\blocks\Cinder-Videodromm\src\VDAudio.cpp">
-      <Filter>Blocks\Videodromm\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Cinder\blocks\Cinder-Videodromm\src\VDFbo.cpp">
-      <Filter>Blocks\Videodromm\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Cinder\blocks\Cinder-Videodromm\src\VDHapMovie.cpp">
-      <Filter>Blocks\Videodromm\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Cinder\blocks\Cinder-Videodromm\src\VDInputTexture.cpp">
-      <Filter>Blocks\Videodromm\src</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\Cinder\blocks\Cinder-Videodromm\src\VDLog.cpp">
-      <Filter>Blocks\Videodromm\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Cinder\blocks\Cinder-Videodromm\src\VDRouter.cpp">
       <Filter>Blocks\Videodromm\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Cinder\blocks\Cinder-Videodromm\src\VDSession.cpp">
       <Filter>Blocks\Videodromm\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Cinder\blocks\Cinder-Videodromm\src\VDSettings.cpp">
-      <Filter>Blocks\Videodromm\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Cinder\blocks\Cinder-Videodromm\src\VDShaders.cpp">
-      <Filter>Blocks\Videodromm\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Cinder\blocks\Cinder-Videodromm\src\VDTextures.cpp">
       <Filter>Blocks\Videodromm\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Cinder\blocks\Cinder-Videodromm\src\VDUtils.cpp">
