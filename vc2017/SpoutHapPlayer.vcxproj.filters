@@ -132,9 +132,6 @@
     <ClCompile Include="..\..\..\Cinder\blocks\Cinder-ImGui\lib\imgui\imgui_demo.cpp">
       <Filter>Blocks\ImGui\lib\imgui</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\..\Cinder\blocks\Cinder-MIDI2\include\CinderMidi.h">
-      <Filter>Blocks\Midi2\include</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\Cinder\blocks\Cinder-MIDI2\include\MidiExceptions.h">
       <Filter>Blocks\Midi2\include</Filter>
     </ClInclude>
@@ -151,9 +148,6 @@
       <Filter>Blocks\Midi2\lib</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Cinder\blocks\Cinder-MIDI2\src\MidiHub.cpp">
-      <Filter>Blocks\Midi2\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Cinder\blocks\Cinder-MIDI2\src\CinderMidi.cpp">
       <Filter>Blocks\Midi2\src</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\Cinder\blocks\Cinder-MIDI2\src\MidiOut.cpp">
@@ -234,9 +228,6 @@
     <ClCompile Include="..\..\..\Cinder\blocks\OSC\src\cinder\osc\Osc.cpp">
       <Filter>Blocks\OSC\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Cinder\blocks\Cinder-Videodromm\src\VDConsole.cpp">
-      <Filter>Blocks\Videodromm\src</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\Cinder\blocks\Cinder-Videodromm\src\VDFbo.cpp">
       <Filter>Blocks\Videodromm\src</Filter>
     </ClCompile>
@@ -297,8 +288,11 @@
     <ClCompile Include="..\..\..\Cinder\blocks\Cinder-Videodromm\src\VDUIWebsockets.cpp">
       <Filter>Blocks\Videodromm\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Cinder\blocks\Cinder-Videodromm\src\VDWebsocket.cpp">
-      <Filter>Blocks\Videodromm\src</Filter>
+    <ClCompile Include="..\..\..\Cinder\blocks\Cinder-MIDI2\src\MidiIn.cpp">
+      <Filter>Blocks\Midi2\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Cinder-MIDI2\src\MidiMessage.cpp">
+      <Filter>Blocks\Midi2\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -310,9 +304,6 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Cinder\blocks\OSC\src\cinder\osc\Osc.h">
       <Filter>Blocks\OSC\src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Cinder\blocks\Cinder-Videodromm\include\VDConsole.h">
-      <Filter>Blocks\Videodromm\include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Cinder\blocks\Cinder-Videodromm\include\VDFbo.h">
       <Filter>Blocks\Videodromm\include</Filter>
@@ -372,9 +363,6 @@
       <Filter>Blocks\Videodromm\include</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\Cinder\blocks\Cinder-Videodromm\include\VDUIWebsockets.h">
-      <Filter>Blocks\Videodromm\include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\Cinder\blocks\Cinder-Videodromm\include\VDWebsocket.h">
       <Filter>Blocks\Videodromm\include</Filter>
     </ClInclude>
   </ItemGroup>
